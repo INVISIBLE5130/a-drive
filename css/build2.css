@@ -586,6 +586,16 @@ picture {
   position: relative;
   height: 10rem; }
 
+.main-button_pdf {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-button__text {
+  margin-left: 15%;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0; }
