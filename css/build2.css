@@ -874,7 +874,7 @@ picture {
       .slide__picture {
         top: -5px;
         left: -13px;
-        width: 100%; } }
+        width: 90%; } }
     .slide__picture-img {
       position: relative;
       z-index: 2;
