@@ -371,7 +371,7 @@ class Slider {
 
     this.isAnimFinish = false;
 
-    const url = this.slides[this.currentSlide].querySelector('img').getAttribute('srcset');
+    const url = this.slides[this.currentSlide].querySelector('.slider').getAttribute('srcset');
     
     this.slides.forEach(slide => slide.classList.add('hidden'));
     this.slides[this.currentSlide].classList.remove('hidden');
