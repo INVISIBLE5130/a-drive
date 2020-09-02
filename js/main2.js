@@ -396,6 +396,16 @@ class Slider {
   }
 }
 
+document.querySelector('.sound').addEventListener('click', () => {
+  const video = document.querySelector('.video')
+
+  if (video.paused) {
+    video.play()
+  } else {
+    video.pause()
+  }
+})
+
 // cards
 cards.forEach((card, index) => card.addEventListener('mouseover', () => cardOnMouseOver(index)));
 cards[0].classList.add('card-over');
