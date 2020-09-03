@@ -406,7 +406,9 @@ class Slider {
 const video = document.querySelector('.video'),
     ferrari = document.querySelectorAll('.mute'),
     slideBack = document.querySelector('#prev-ferrari-slide'),
-    slideNext = document.querySelector('#next-ferrari-slide')
+    slideNext = document.querySelector('#next-ferrari-slide'),
+    pause = document.querySelectorAll('.pause'),
+    pauseWebp = document.querySelector('.pauseWebp');
 
 slideBack.addEventListener('click', function () {
     if (!video.paused) {
@@ -434,6 +436,20 @@ video.addEventListener('click', () => {
     } else {
         video.pause()
     }
+
+    if (video.paused) {
+        pauseWebp.setAttribute('srcset', '/img/ferrari/ferrari_3.jpg')
+    } else {
+        pauseWebp.setAttribute('srcset', '/img/ferrari/ferrari3.jpg')
+    }
+
+    pause.forEach(item => {
+        if (video.paused) {
+            item.setAttribute('srcset', '/img/ferrari/ferrari_3.jpg')
+        } else {
+            item.setAttribute('srcset', '/img/ferrari/ferrari3.jpg')
+        }
+    })
 })
 
 document.querySelector('.sound').addEventListener('click', () => {
@@ -442,6 +458,20 @@ document.querySelector('.sound').addEventListener('click', () => {
     } else {
         video.pause()
     }
+
+    if (video.paused) {
+        pauseWebp.setAttribute('srcset', '/img/ferrari/ferrari_3.jpg')
+    } else {
+        pauseWebp.setAttribute('srcset', '/img/ferrari/ferrari3.jpg')
+    }
+
+    pause.forEach(item => {
+        if (video.paused) {
+            item.setAttribute('srcset', '/img/ferrari/ferrari_3.jpg')
+        } else {
+            item.setAttribute('srcset', '/img/ferrari/ferrari3.jpg')
+        }
+    })
 })
 
 
