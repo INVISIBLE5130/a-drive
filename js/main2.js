@@ -403,7 +403,30 @@ class Slider {
     }
 }
 
-const video = document.querySelector('.video')
+const video = document.querySelector('.video'),
+    ferrari = document.querySelectorAll('.mute'),
+    slideBack = document.querySelector('#prev-ferrari-slide'),
+    slideNext = document.querySelector('#next-ferrari-slide')
+
+slideBack.addEventListener('click', function () {
+    if (!video.paused) {
+        video.pause()
+    }
+})
+
+slideNext.addEventListener('click', function () {
+    if (!video.paused) {
+        video.pause()
+    }
+})
+
+ferrari.forEach(item => {
+    item.addEventListener('click', function () {
+        if (!video.paused) {
+            video.pause()
+        }
+    })
+})
 
 video.addEventListener('click', () => {
     if (video.paused) {
