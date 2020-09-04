@@ -460,9 +460,9 @@ document.querySelector('.sound').addEventListener('click', () => {
     }
 
     if (video.paused) {
-        pauseWebp.setAttribute('srcset', '/img/ferrari/ferrari_3.jpg')
+        pauseWebp.setAttribute('srcset', '/img/ferrari/ferrari_3.webp')
     } else {
-        pauseWebp.setAttribute('srcset', '/img/ferrari/ferrari3.jpg')
+        pauseWebp.setAttribute('srcset', '/img/ferrari/ferrari3.webp')
     }
 
     pause.forEach(item => {
